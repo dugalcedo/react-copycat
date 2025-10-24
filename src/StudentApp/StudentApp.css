@@ -1,0 +1,9 @@
+/* 
+    IMPORTANT
+    Use CSS nesting to avoid conflicts with the TeacherApp.
+    Everything should be nested inside of #studentApp.
+*/
+
+#studentApp {
+    
+}

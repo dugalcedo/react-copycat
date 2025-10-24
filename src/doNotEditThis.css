@@ -1,0 +1,88 @@
+:root {
+    --student-blue: #3cd696;
+    --teacher-red: #ff6741;
+}
+
+html, 
+body, 
+body > #root,
+body > #root > header,
+body > #root > header *,
+body > #root > main,
+body > #root > main > #tabs,
+body > #root > main > #tabs > .tab,
+body > #root > main > #apps,
+body > #root > main > #apps > .app
+{
+    box-sizing: border-box;
+}
+
+html, body, body > #root {
+    height: 100dvh;
+}
+
+body {
+    margin: 0;
+    background-color: #111;
+}
+
+body > #root {
+    display: flex;
+    flex-direction: column;
+}
+
+body > #root > main {
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+body > #root > main > #tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    gap: 2rem;
+    font-family: monospace;
+
+    & > .tab {
+        font-family: monospace;
+        font-size: 1.5rem;
+        padding: .5rem;
+        border-radius: 1rem 1rem 0 0;
+        border: 0;
+        cursor: pointer;
+
+        &.student {
+            background-color: var(--student-blue);
+        }
+
+        &.teacher {
+            background-color: var(--teacher-red);
+        }
+    }
+}
+
+body > #root > main > #apps {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    overflow-y: hidden;
+
+    & > .app {
+        border-top: 20px solid #eee;
+        background-color: white;
+        overflow-y: auto;
+
+        &.student {
+            border-color: var(--student-blue);
+        }
+
+        &.teacher {
+            border-color: var(--teacher-red);
+        }
+    }
+}
