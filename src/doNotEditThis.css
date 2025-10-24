@@ -99,18 +99,49 @@ body > #root > main > #tabs {
 
     & > .tab {
         font-family: monospace;
-        font-size: 1.5rem;
+        font-size: 0.8rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
         padding: .5rem;
         border-radius: 1rem 1rem 0 0;
         border: 0;
         cursor: pointer;
 
+        & .title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            text-shadow: 
+                1px 1px 0px black,
+                1px -1px 0px black,
+                -1px 1px 0px black,
+                -1px -1px 0px black
+            ;
+        }
+
         &.student {
             background-color: var(--student-blue);
+            & .title {
+                color: var(--student-blue);
+            }
         }
 
         &.teacher {
             background-color: var(--teacher-red);
+            & .title {
+                color: var(--teacher-red);
+            }
+        }
+
+        & .perf {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+
+            & .metric {
+                display: flex;
+                gap: 1rem;
+            }
         }
     }
 }

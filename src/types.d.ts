@@ -1,0 +1,4 @@
+type MeasureLabel = (
+    | 'student'
+    | 'teacher'
+)
