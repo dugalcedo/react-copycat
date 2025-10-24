@@ -31,6 +31,56 @@ body > #root {
     flex-direction: column;
 }
 
+body > #root > header {
+    font-family: monospace;
+    color: white;
+    
+    & * {
+        margin: 0;
+    }
+
+    & > .controls {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        padding: .25rem;
+
+        & > form {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        & .field {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        & input {
+            width: 50px;
+            border: 0;
+            background-color: black;
+            border: 1px solid white;
+            color: white;
+            font-family: monospace;
+        }
+
+        & button {
+            border: 1px solid white;
+            padding: .25rem;
+            background: none;
+            color: white;
+            font-family: monospace;
+        }
+
+        & .times-up {
+            color: red;
+        }
+    }
+}
+
 body > #root > main {
     height: 100%;
     flex-grow: 1;

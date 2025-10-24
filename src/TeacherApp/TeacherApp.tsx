@@ -1,62 +1,9 @@
 function TeacherApp() {
+
+
     return (
         <>
-            <h1>Hello im the teacher</h1>  
-            <ul>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-            </ul>
+
         </>
     )
 }
